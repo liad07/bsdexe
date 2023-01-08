@@ -47,10 +47,13 @@ int screenHeight = Screen.PrimaryScreen.Bounds.Height;
             form.TopMost = true;
 
             // Show the form
+
             button1.Click += button1_Click;
             
             // Define the event handler method
 
+            this.ShowInTaskbar = false;
+            form.ShowInTaskbar = false;
             form.Show();
             
         }
